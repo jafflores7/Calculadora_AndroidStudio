@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="12dp"
+    tools:context=".MainActivity">
+    <TextView
+
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULADORA"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+    />
+
+    <EditText
+        android:id="@+id/campo_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numero 1"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:padding="12dp"
+    />
+
+
+    <EditText
+        android:id="@+id/campo_num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numero 1"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:padding="12dp"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        >
+
+
+    <Button
+        android:id="@+id/boton_sumar"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginTop="8dp"
+        android:text="SUMAR"
+    />
+
+    <Button
+        android:id="@+id/boton_restar"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginTop="8dp"
+        android:text="RESTAR"
+    />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/boton_multiplicar"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginTop="8dp"
+        android:text="MULTIPLICAR"
+        />
+
+    <Button
+        android:id="@+id/boton_dividir"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginTop="8dp"
+        android:text="DIVIDIR"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_resp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="RESPUESTA"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        />
+</LinearLayout>
