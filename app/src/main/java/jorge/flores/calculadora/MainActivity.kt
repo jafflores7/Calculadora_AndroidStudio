@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     lateinit var campo_num1: EditText
@@ -71,8 +72,13 @@ class MainActivity : AppCompatActivity() {
             var num1 = campo_num1.text.toString().toDouble()
             var num2 = campo_num2.text.toString().toDouble()
 
-            var res = num1 / num2
-            tv_resp.setText("${res}")
+            if (num2 == 0.0){
+                Toast.makeText(this, "Cant Divide by 0", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                var res = num1 / num2
+                tv_resp.setText("${res}")
+            }
         }
     }
 }
